@@ -76,11 +76,68 @@
 // 1. Перевірити тип змінної result let result = 5 + 5 + '5'; console.log(result);
 // 2. Перевірити email let email = 'example@gmail.com';
 
-console.log(email.includes('@')); console.log(email.length);
+// console.log(email.includes('@')); console.log(email.length);
 // 3. Об'єднати слова в fullName let firstName = 'My'; let lastName = 'name'; let thirdName = 'is';
 
 
-let fullName = firstName + ' ' + lastName + ' ' + thirdName; fullName += ' Viktor';
-console.log(fullName);
+// let fullName = firstName + ' ' + lastName + ' ' + thirdName; fullName += ' Viktor';
+// console.log(fullName);
 // 4. Повідомлення про оплату let userName = 'Олександр'; let payment = 300;
-alert(Дякуємо, ${userName}! До сплати ${payment} гривень);
+// alert(Дякуємо, ${userName}! До сплати ${payment} гривень);
+
+
+// homework4
+
+// 1. Перевірка текстових полів
+let field1 = "Hello";
+let field2 = "World";
+
+if (field1 !== "" && field2 !== "") {
+    console.log("Обидва поля заповнені");
+} else {
+    console.log("Не всі поля заповнені");
+}
+
+// 2. Сума двох чисел
+let num1 = 7;
+let num2 = 5;
+let sum = num1 + num2;
+
+if (sum > 10) {
+    console.log("Сума більша за 10");
+} else {
+    console.log("Сума менша або дорівнює 10");
+}
+
+// 3. Перевірка наявності слова JavaScript
+let text = "Я вивчаю JavaScript";
+
+if (text.includes("JavaScript")) {
+    console.log("Текст містить слово JavaScript");
+} else {
+    console.log("Текст не містить слово JavaScript");
+}
+
+// 4. Перевірка числа
+let number = 15;
+
+if (number > 10 && number < 20) {
+    console.log("Число входить в діапазон від 10 до 20");
+} else {
+    console.log("Число не входить в діапазон від 10 до 20");
+}
+
+// 5. Перевірка даних користувача
+let name = "Ivanka";
+let email = "ivanka@gmail.com";
+let password = "123456";
+
+if (
+    name.length >= 3 &&
+    email.includes("@") &&
+    password.length >= 6
+) {
+    console.log("Перенаправлення на іншу сторінку");
+} else {
+    console.log("Помилка: неправильне заповнення");
+}
